@@ -209,3 +209,65 @@ input:focus, textarea:focus{border-color: rgba(249,115,22,.55)}
   .grid2{grid-template-columns:1fr}
   .links{display:none}
 }
+
+
+/* ===== TEAM ===== */
+
+.team-grid{
+  margin-top:24px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap:18px;
+}
+
+.team-card{
+  background: rgba(255,255,255,.9);
+  border:1px solid rgba(249,115,22,.25);
+  border-radius:20px;
+  padding:20px;
+  box-shadow: 0 12px 28px rgba(17,24,39,.08);
+  text-align:left;
+  transition: transform .2s ease;
+}
+
+.team-card:hover{
+  transform: translateY(-4px);
+}
+
+.avatar{
+  width:52px;
+  height:52px;
+  border-radius:14px;
+  background: linear-gradient(135deg, #f97316, #fb923c);
+  color:white;
+  font-weight:900;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:12px;
+  font-size:1.1rem;
+}
+
+.team-card h3{
+  margin:0;
+  font-size:1.05rem;
+}
+
+.role{
+  margin:4px 0;
+  font-weight:800;
+  color:#f97316;
+}
+
+.career{
+  margin:0;
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+.contact{
+  margin-top:8px;
+  font-size:.9rem;
+  color:#374151;
+  font-weight:600;
+}
