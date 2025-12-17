@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gestor de Ventas para Librerías | ABMC + Stock + Reportes</title>
+  <meta name="description" content="Gestor de ventas para librerías: alta de stock, registro de ventas, consulta rápida y estadísticas. Control de usuarios con registro autorizado." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#inicio">MiProyecto</a>
+      <nav class="links">
+        <a href="#para-quien">Para quién</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#demo">Demo</a>
+        <a class="btn small" href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="inicio" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="badge">Aplicación ABMC • Gestor de ventas</p>
+        <h1>Vendé más rápido, con stock bajo control.</h1>
+        <p class="sub">
+          Un sistema simple para librerías: alta de libros, registro de ventas, consulta por ISBN/título
+          y reportes claros (top libros y vendedores).
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#contacto">Quiero una demo</a>
+          <a class="btn ghost" href="#funcionalidades">Ver funcionalidades</a>
+        </div>
+
+        <div class="trust">
+          <div class="trust-item"><span class="dot"></span><span>Ventas rápidas</span></div>
+          <div class="trust-item"><span class="dot"></span><span>Alertas sin stock</span></div>
+          <div class="trust-item"><span class="dot"></span><span>Estadísticas</span></div>
+        </div>
+      </div>
+
+      <div class="card screenshot">
+        <div class="card-top">
+          <div class="circles"><span></span><span></span><span></span></div>
+          <span class="mini">preview</span>
+        </div>
+
+        <div class="screen">
+          <div class="mock-row"></div>
+          <div class="mock-row w80"></div>
+          <div class="mock-row w60"></div>
+
+          <div class="mock-boxes">
+            <div class="box">
+              <div class="k">Total facturado</div>
+              <div class="v">$ —</div>
+            </div>
+            <div class="box">
+              <div class="k">Unidades</div>
+              <div class="v">—</div>
+            </div>
+            <div class="box">
+              <div class="k">Top libros</div>
+              <div class="v">—</div>
+            </div>
+          </div>
+        </div>
+
+        <p class="mini-note">Tip: después reemplazás esto por capturas reales.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- PARA QUIÉN -->
+  <section id="para-quien" class="section">
+    <div class="container">
+      <h2>¿Para quién está pensado?</h2>
+      <p class="muted">
+        Para librerías que quieren registrar ventas y mantener seguimiento de stock y balance.
+      </p>
+
+      <div class="grid3">
+        <article class="card">
+          <h3>📚 Dueño de librería</h3>
+          <p>Control de usuarios y acceso a reportes para tomar decisiones (stock, ventas, rotación).</p>
+        </article>
+
+        <article class="card">
+          <h3>🧾 Empleado de caja</h3>
+          <p>Registrar ventas rápido, buscar libros por ISBN/título y evitar errores por falta de stock.</p>
+        </article>
+
+        <article class="card">
+          <h3>📣 Marketing</h3>
+          <p>Ver qué vende más/menos para armar campañas según demanda real.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNCIONALIDADES -->
+  <section id="funcionalidades" class="section alt">
+    <div class="container">
+      <h2>Funcionalidades (las que ya están en tu sistema)</h2>
+      <p class="muted">Nada “inventado”: esto sale de tu backend y pantallas actuales.</p>
+
+      <div class="grid2">
+        <article class="card">
+          <h3>🔐 Acceso controlado</h3>
+          <ul class="list">
+            <li>Login de usuarios</li>
+            <li>Registro con token de autorización</li>
+            <li>Contraseñas validadas y guardadas de forma segura</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>📦 Stock (ABMC)</h3>
+          <ul class="list">
+            <li>Alta de stock por ISBN (si existe: suma unidades)</li>
+            <li>Si no existe: carga título, autor, género, precio</li>
+            <li>Modificar datos del libro</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>🧾 Registro de ventas</h3>
+          <ul class="list">
+            <li>Baja de stock por venta</li>
+            <li>Alerta si intentás vender sin stock</li>
+            <li>La venta queda registrada con fecha y vendedor</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>🔎 Búsqueda rápida</h3>
+          <ul class="list">
+            <li>Consulta por ISBN, título, autor o género</li>
+            <li>Tabla con resultados (precio + unidades)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>📊 Estadísticas y reportes</h3>
+          <ul class="list">
+            <li>Total facturado, unidades, ventas, ticket promedio</li>
+            <li>Top libros por facturación</li>
+            <li>Top vendedores (ventas/unidades/total)</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>⚙️ Stack</h3>
+          <ul class="list">
+            <li>Python + MySQL</li>
+            <li>Interfaz con ttkbootstrap</li>
+            <li>Encriptado de password con bcrypt</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section id="como-funciona" class="section">
+    <div class="container">
+      <h2>Cómo se usa (flujo simple)</h2>
+
+      <div class="steps">
+        <div class="step">
+          <div class="n">1</div>
+          <div>
+            <h3>Ingresás</h3>
+            <p class="muted">Login o registro (solo con token autorizado).</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="n">2</div>
+          <div>
+            <h3>Cargás stock</h3>
+            <p class="muted">Alta por ISBN (si existe suma unidades; si no, cargás datos).</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="n">3</div>
+          <div>
+            <h3>Vendés rápido</h3>
+            <p class="muted">Registrás venta, descuenta stock y evita vender sin unidades.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="n">4</div>
+          <div>
+            <h3>Medís</h3>
+            <p class="muted">Reportes: total, ticket promedio, top libros y top vendedores.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEMO -->
+  <section id="demo" class="section alt">
+    <div class="container">
+      <div class="split">
+        <div>
+          <h2>Demo</h2>
+          <p class="muted">
+            Podés poner un video mostrando tu app (YouTube/Loom). Mientras tanto, dejalo así.
+          </p>
+          <a class="btn" href="#contacto">Solicitar demo</a>
+        </div>
+
+        <div class="card video">
+          <div class="ratio">
+            <iframe
+              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              title="Demo"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <p class="mini-note">Reemplazá el link por tu demo real cuando la tengas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="section">
+    <div class="container">
+      <div class="split">
+        <div>
+          <h2>Contacto</h2>
+          <p class="muted">
+            Dejame un mensaje y te respondo. (Esto no toca tu MySQL ni tu app, es solo para captar interesados.)
+          </p>
+
+          <div class="contact-cards">
+            <a class="card linkcard" href="mailto:tuemail@dominio.com">
+              <h3>Email</h3>
+              <p class="muted">tuemail@dominio.com</p>
+            </a>
+            <a class="card linkcard" href="https://wa.me/54911XXXXXXXXX" target="_blank" rel="noreferrer">
+              <h3>WhatsApp</h3>
+              <p class="muted">+54 9 11 XXXXXXXX</p>
+            </a>
+          </div>
+        </div>
+
+        <form class="card form" id="leadForm">
+          <h3>Pedí una demo</h3>
+
+          <label>
+            Nombre
+            <input name="nombre" placeholder="Tu nombre" required />
+          </label>
+
+          <label>
+            Email
+            <input name="email" type="email" placeholder="tu@mail.com" required />
+          </label>
+
+          <label>
+            Mensaje
+            <textarea name="mensaje" rows="4" placeholder="Contame tu librería y qué necesitás..." required></textarea>
+          </label>
+
+          <button class="btn" type="submit">Enviar</button>
+          <p class="mini-note" id="formNote">Se abre tu mail con el mensaje armado.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="muted">© <span id="year"></span> MiProyecto</span>
+      <span class="muted">ABMC • Stock • Ventas • Reportes</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
